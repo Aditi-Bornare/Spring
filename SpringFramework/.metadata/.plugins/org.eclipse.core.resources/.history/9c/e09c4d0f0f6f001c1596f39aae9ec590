@@ -1,0 +1,5 @@
+package beans;
+
+interface Car {
+	public void drive();
+}

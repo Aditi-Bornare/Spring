@@ -1,0 +1,26 @@
+server:
+  port: 8989
+
+eureka:
+  instance:
+    hostname: localhost
+
+spring:
+  application:
+    name: api-gateway
+
+#  lb mhnje load balancing
+#  user-service kade ja jevha pan browser var /user/** asa lihal
+#  ** mhnje kahitari, ie je pan lihtal tyane tumhala user-service kade navigate kela pahije
+#  ani user communicate karto ae contact sobat
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**
+        - id: contact-service
+          uri: lb://contact-service
+          predicates:
+            - Path=/contact/**

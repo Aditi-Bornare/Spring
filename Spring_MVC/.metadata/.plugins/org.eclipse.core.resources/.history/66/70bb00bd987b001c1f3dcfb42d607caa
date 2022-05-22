@@ -1,0 +1,26 @@
+package com.spring.jdbc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class Demo {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ap=new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+		
+		StudentDao obj=(StudentDao)ap.getBean("studentDao");
+		
+		Student st=new Student();
+		st.setId(111);
+		st.setName("Harry");
+		st.setCity("Hogwarts");
+		
+//		Fire desired query
+		int res = template.update(sql,101,"Dummy","Dummy");
+		
+		System.out.println("Record inserted: "+res);
+	}
+
+}

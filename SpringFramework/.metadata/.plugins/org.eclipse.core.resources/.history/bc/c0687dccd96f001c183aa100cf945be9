@@ -1,0 +1,21 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="t" class="beans.Test" >
+<!-- In this Test class, we need to inject connection properties -->
+<!-- 
+<property name="driver" value="oracle.jdbc.OracleDriver" />
+<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+<property name="username" value="system" />
+<property name="password" value="system" />
+-->
+<property name="driver" value="com.mysql.cj.jdbc.Driver" />
+<property name="url" value="jdbc:mysql://localhost:3306/dbr" />
+<property name="username" value="root" />
+<property name="password" value="root" />
+
+</bean>
+
+</beans>

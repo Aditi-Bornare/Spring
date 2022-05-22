@@ -1,0 +1,18 @@
+package beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Engine {
+	private String modelyear;
+
+	public String getModelyear() {
+		return modelyear;
+	}
+
+	@Autowired
+	@Qualifier(value="e1")
+	public void setModelyear(String modelyear) {
+		this.modelyear = modelyear;
+	}
+}

@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+#  8761 is the default port number of Eureka Server
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+# Eureka tu server ae tu client nahi ae, so tu svatala kuthe register nako hu
+# ani tula register nahi hoych ae, so registry mhnje register honyachi jaga so te pan false
+
+# Ha waiting time asto Eureka Server sathi, so 0 millisecond madhe eureka server
+# ready hoto clients register karun ghenya sathi

@@ -1,0 +1,15 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="t" class="beans.Test" >
+<!-- In this Test class, we need to inject connection properties -->
+<property name="driver" value="oracle.jdbc.OracleDriver" />
+<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+<property name="username" value="system" />
+<property name="password" value="system" />
+
+</bean>
+
+</beans>

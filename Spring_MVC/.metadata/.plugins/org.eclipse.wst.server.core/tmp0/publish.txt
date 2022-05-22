@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Jan 16 20:21:37 IST 2022
+org.eclipse.jst.jee.server\:/binary\:D\:\\class\\Spring_MVC\\01_MVC_3_ControllerClassNameHandlerMapping\\WebContent\\WEB-INF\\lib\\spring-web-5.3.14.jar=WEB-INF/lib/spring-web-5.3.14.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\class\\Spring_MVC\\02_2_ParameterizedViewController\\WebContent\\WEB-INF\\lib\\spring-web-5.3.14.jar=WEB-INF/lib/spring-web-5.3.14.jar

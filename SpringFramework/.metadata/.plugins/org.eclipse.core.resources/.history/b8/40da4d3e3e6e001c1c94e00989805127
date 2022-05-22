@@ -1,0 +1,18 @@
+package com.rspc.cab.car;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import com.rspc.cab.eng.Engine;
+
+public class Car {
+	
+	private Engine engine; //secondary datatype
+	
+	public void show()
+	{
+		System.out.println(engine.getEngine());
+	}
+	
+}

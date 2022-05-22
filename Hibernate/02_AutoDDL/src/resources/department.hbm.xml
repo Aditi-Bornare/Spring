@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="beans.Department" table="tbl_dept" schema="system">
+		<!-- For Primary key used id tag -->
+		<id name="did" />
+		
+		<!-- For Non-Primary key use property tag -->
+		<property name="dname" />
+	</class>
+</hibernate-mapping>

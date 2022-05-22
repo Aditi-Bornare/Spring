@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/c3p0-oracle-thin-extras-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/mchange-commons-java-0.2.11.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/ojdbc6-11.2.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/spring-dao-2.0.8.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/spring-jdbc-5.2.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/tomcat-dbcp-8.0.53.jar"/>
+	<classpathentry kind="lib" path="D:/jars/jars_spring_jdbc/tomcat-juli-8.0.53.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

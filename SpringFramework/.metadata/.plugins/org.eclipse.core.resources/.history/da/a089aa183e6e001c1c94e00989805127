@@ -1,0 +1,19 @@
+package com.rspc.cab.eng;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import com.rspc.cab.eng.Engine;
+
+public class Car {
+	
+	@Autowired
+	@Qualifier(value="e2")
+	private Engine engine; //secondary datatype
+	
+	public void show()
+	{
+		System.out.println(engine.getModelyear());
+	}
+	
+}

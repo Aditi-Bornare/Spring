@@ -1,0 +1,11 @@
+package beans;
+
+public class Benz implements Car {
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

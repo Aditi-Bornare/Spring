@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+D:\class\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3243845573.index
+\SpringBootSecurity3\src\main\java
+D:\class\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1191177350.index
+\SpringBootSecurity2\src\main\java
+D:\class\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3788200846.index
+\SpringBootSecurity4\src\main\java
+D:\class\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\145736005.index
+\SpringBootSecurity\src\main\java
+D:\class\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2064291109.index
+\SpringBootSecurity-trial\src\main\java
+D:\class\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3275517957.index
+\02_JerseyWithMySQL\src\main\java
+D:\class\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1842391834.index
+\01_RestAPIJersey\src\main\java

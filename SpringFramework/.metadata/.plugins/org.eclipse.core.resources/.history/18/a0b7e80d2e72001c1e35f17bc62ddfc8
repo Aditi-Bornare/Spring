@@ -1,0 +1,9 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="t1" class="beans.Test1" init-method="init" destroy-method="destroy" />
+<bean id="t2" class="beans.Test2" init-method="init" destroy-method="destroy" />
+
+</beans>

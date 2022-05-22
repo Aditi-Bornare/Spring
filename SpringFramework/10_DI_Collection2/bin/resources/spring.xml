@@ -1,0 +1,37 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util.xsd">
+
+<bean id="t" class="beans.Test">
+
+<property name="fruits">
+<util:list list-class="java.util.Vector">
+<value>Mango</value>
+<value>Apple</value>
+<value>Orange</value>
+</util:list>
+</property>
+
+<property name="cricketers">
+<util:set set-class="java.util.TreeSet">
+<value>Sachin</value>
+<value>Dhoni</value>
+<value>Rohit</value>
+</util:set>
+</property>
+
+<property name="StCap">
+<util:map map-class="java.util.Hashtable">
+<entry key="Maharashtra" value="Mumbai" />
+<entry key="Gujarat" value="Gandhinagar" />
+<entry key="Madhya Pradesh" value="Bhopal" />
+</util:map>
+</property>
+
+</bean>
+
+</beans>

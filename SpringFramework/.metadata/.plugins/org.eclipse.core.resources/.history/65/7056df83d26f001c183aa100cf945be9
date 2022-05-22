@@ -1,0 +1,21 @@
+//Instance Factory Approach
+
+package beans;
+
+import org.springframework.beans.factory.FactoryBean;
+
+public class CarFactory implements FactoryBean{
+	public String carname;
+
+	public void setCarname(String carname) {
+		this.carname = carname;
+	}
+	
+	public Car getCarInstance() throws Exception
+	{
+//		By using carname variable we can create object of Car interface
+		Car cobj=(Car)Class.forName(carname).newInstance();
+		return cobj;
+	}
+	
+}

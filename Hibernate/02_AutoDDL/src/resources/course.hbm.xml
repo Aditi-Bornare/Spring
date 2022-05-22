@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="beans.Course" table="tbl_course" schema="system">
+		<!-- For Primary key used id tag -->
+		<id name="cid" column="c_cid"/>
+		
+		<!-- For Non-Primary key use property tag -->
+		<property name="cname" column="c_name" />
+		<property name="fee" column="c_fee" />
+	</class>
+</hibernate-mapping>

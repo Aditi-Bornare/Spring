@@ -1,0 +1,48 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+<beans>
+
+<!-- 
+<bean class="beans.A" id="a" />
+<bean class="beans.B" id="b" />
+<bean class="beans.C" id="c" />
+output: 
+A constructor
+B constructor
+C constructor -->
+
+<!-- 
+<bean class="beans.B" id="b" />
+<bean class="beans.C" id="c" />
+<bean class="beans.A" id="a" />
+output: 
+B constructor
+C constructor
+A constructor -->
+
+<!--
+<bean class="beans.B" id="b" depends-on="c" />
+<bean class="beans.A" id="a" />
+<bean class="beans.C" id="c" />
+output:
+C constructor
+B constructor
+A constructor -->
+
+<!--
+<bean class="beans.B" id="b" depends-on="c" />
+<bean class="beans.A" id="a" />
+<bean class="beans.C" id="c" depends-on="a"/>
+output:
+A constructor
+C constructor
+B constructor -->
+
+<!-- The below concept is called as chaining as each class is dependent on each other
+so this gives error -->
+<bean class="beans.B" id="b" depends-on="c" />
+<bean class="beans.A" id="a" depends-on="b"/>
+<bean class="beans.C" id="c" depends-on="a"/>
+
+</beans>

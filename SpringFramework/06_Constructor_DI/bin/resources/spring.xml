@@ -1,0 +1,47 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+<beans>
+<bean class="beans.Test" id="t" scope="prototype">
+<!-- <constructor-arg value="Rohit"></constructor-arg> -->
+
+
+<!-- <constructor-arg>
+<value>Rohit</value>
+</constructor-arg> -->
+
+<!-- <constructor-arg value="12" type="int"/>
+-->
+
+<constructor-arg value="Akshay" />
+<constructor-arg value="12"/>
+
+<!-- IF YOU CHANGE THE SEQUENCE YOU WILL GET ERROR -->
+<!-- 
+<constructor-arg value="12"/>
+<constructor-arg value="Akshay" />
+-->
+
+<!-- SOLUTION FOR ABOVE PROBLEM -->
+<!-- 
+<constructor-arg value="12" tyep="int"/>
+<constructor-arg value="Akshay" type="String"/>
+-->
+
+
+<!-- 
+NOT ALLOWED
+<constructor-arg>
+<value>Akshay</value>
+<value>16</value>
+</constructor-arg>
+
+NOT ALLOWED
+<constructor-arg value="Akshay">
+<value>16</value>
+</constructor-arg>
+-->
+
+
+</bean>
+</beans>

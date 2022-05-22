@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="beans.Student" table="hib_crud" schema="system">
+		<!-- For Primary key used id tag -->
+		<id name="id" column="sid"/>
+		
+		<!-- For Non-Primary key use property tag -->
+		<property name="name" column="sname" />
+		<property name="email" column="semail" />
+		<property name="address" column="saddress" />
+		
+	</class>
+</hibernate-mapping>
